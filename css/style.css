@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media(max-width: 1180px) {
+    .bgfon {
+        height: auto !important;
+    }
+    .flexbox {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .flexbox-container {
+        margin-bottom: 20px;
+    }
+}
+
+.bgfon {
+    background: url('../img/Pattern.png') repeat;
+    height: 100em;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.bgfon > p:first-child {
+    text-align: center;
+    color: #fff;
+    padding: 24px 0;
+    font-size: 36px;
+    line-height: 44px;
+    font-family: 'Exo 2';
+}
+
+.flexbox {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.main-container {
+    width: 320px;
+    height: 509px;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    -webkit-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+    border-radius: 10px;
+}
+
+.drop-shadow_foieGras, .drop-shadow_fish, .drop-shadow_chicken {
+    -webkit-filter: drop-shadow(0px 4px 0px #49aada) drop-shadow(4px 0px 0px #49aada) drop-shadow(-4px 0px 0px #49aada) drop-shadow(0px -4px 0px #49aada);
+    filter: drop-shadow(0px 4px 0px #49aada) drop-shadow(4px 0px 0px #49aada) drop-shadow(-4px 0px 0px #49aada) drop-shadow(0px -4px 0px #49aada);
+
+}
+.drop-shadow {
+    -webkit-filter: drop-shadow(0px 4px 0px #1698D9) drop-shadow(4px 0px 0px #1698D9) drop-shadow(-4px 0px 0px #1698D9) drop-shadow(0px -4px 0px #1698D9);
+    filter: drop-shadow(0px 4px 0px #1698D9) drop-shadow(4px 0px 0px #1698D9) drop-shadow(-4px 0px 0px #1698D9) drop-shadow(0px -4px 0px #1698D9);
+}
+
+.notAvailableMain {
+    -webkit-filter: opacity(40%);
+    filter: opacity(40%);
+}
+
+.notAvailable {
+    -webkit-filter: drop-shadow(0px 4px 0px #B3B3B3) drop-shadow(4px 0px 0px #B3B3B3) drop-shadow(-4px 0px 0px #B3B3B3) drop-shadow(0px -4px 0px #B3B3B3);
+    filter: drop-shadow(0px 4px 0px #B3B3B3) drop-shadow(4px 0px 0px #B3B3B3) drop-shadow(-4px 0px 0px #B3B3B3) drop-shadow(0px -4px 0px #B3B3B3);
+}
+
+.notAvailableText {
+    color: #FFFF66 !important;
+}
+
+.main-img {
+    position: absolute;
+    left: -30px;
+    top: 230px;
+}
+
+.weight {
+    position: absolute;
+    bottom: 12px;
+    left: 225px;
+    border-radius: 50%;
+    background: #1698D9;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.weight > p {
+    color: #fff;
+}
+.weight > p:first-child {
+    padding-top: 8px;
+    font-size: 40px;
+}
+
+.weight > p:last-child {
+    padding-bottom: 5px;
+}
+
+.weight-index {
+    position: relative;
+    top: -5px;
+}
+
+.text-container {
+margin: 21px 0 0 51px;
+}
+
+.text-container > h1 {
+    padding: 5px 0 3px 0;
+}
+
+.text-container > h3 {
+    padding-bottom: 15px;
+}
+
+.text-container > p:first-child {
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.text-container >p:last-child {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.buy-string {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 14px;
+}
+
+.buy-string > a {
+    color: #1698D9;
+}
+
+
+.buy-string_foieGrasHidden, .buy-string_fishHidden, .buy-string_chickenHidden  {
+    display: none;
+}
+
+
+.clickedFoieGras, .clickedFish, .clickedChicken {
+    -webkit-filter: drop-shadow(0px 4px 0px #d9164a) drop-shadow(4px 0px 0px #d9164a) drop-shadow(-4px 0px 0px #d9164a) drop-shadow(0px -4px 0px #d9164a) !important;
+    filter: drop-shadow(0px 4px 0px #d9164a) drop-shadow(4px 0px 0px #d9164a) drop-shadow(-4px 0px 0px #d9164a) drop-shadow(0px -4px 0px #d9164a) !important;
+}
+
+.foieGras-color_click, .fish-color_click, .chicken-color_click {
+    background: #d9164a !important;
+}
+
+.text-container_hoverStringFoieGras, .text-container_hoverStringFish, .text-container_hoverStringChicken {
+    color: #d9164a;
+    display: none;
+}
