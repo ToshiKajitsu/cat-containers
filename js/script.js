@@ -2,6 +2,7 @@ const foieGras = document.querySelector('.main-container_foieGras');
 const fish = document.querySelector('.main-container_fish');
 const chicken = document.querySelector('.main-container_chicken');
 
+//Входящий объект с наличием товара
 const current = {
     foeGrasp: 1,
     fish: 1,
@@ -78,7 +79,7 @@ function mouseoutFoieGras() {
     document.querySelector('.weight-foieGras_color').style.background = "#1698D9";
     document.querySelector('.drop-shadow_foieGras').classList.add('drop-shadow');
 };
-
+document.querySelector('.link-foieGras').addEventListener('click', clickOnFoieGras);
 foieGras.addEventListener('click',clickOnFoieGras);
 function clickOnFoieGras() {
     if (!isActiveFoieGras) {
@@ -124,7 +125,7 @@ function mouseoutFish () {
     document.querySelector('.weight-fish_color').style.background = "#1698D9";
     document.querySelector('.drop-shadow_fish').classList.add('drop-shadow');
 };
-
+document.querySelector('.link-fish').addEventListener('click', clickOnFish);
 fish.addEventListener('click',clickOnFish);
 function clickOnFish() {
     if (!isActiveFish) {
@@ -170,7 +171,7 @@ function mouseoutChicken () {
     document.querySelector('.weight-chicken_color').style.background = "#1698D9";
     document.querySelector('.drop-shadow_chicken').classList.add('drop-shadow');
 };
-
+document.querySelector('.link-chicken').addEventListener('click', clickOnChicken);
 chicken.addEventListener('click',clickOnChicken);
 function clickOnChicken() {
     if (!isActiveChicken) {
