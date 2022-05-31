@@ -34,7 +34,7 @@ window.onload = () => {
                 document.querySelector('.buy-string_foieGras').classList.add('notAvailableText');
                 document.querySelector('.buy-string_foieGras').textContent = 'Печалька, с фуа-гра закончился.';
                 document.querySelector('.weight-foieGras_color').style.background = "#B3B3B3";
-                console.log(`${value} недоступно`);
+                // console.log(`${value} недоступно`);
                 break;
             case "fish":
                 document.querySelector('.main-container_fish').removeEventListener('mouseover', mouseoverFish);
@@ -46,7 +46,7 @@ window.onload = () => {
                 document.querySelector('.buy-string_fish').classList.add('notAvailableText');
                 document.querySelector('.buy-string_fish').textContent = 'Печалька, с рыбой закончился.';
                 document.querySelector('.weight-fish_color').style.background = "#B3B3B3";
-                console.log(`${value} недоступно`);
+                // console.log(`${value} недоступно`);
                 break;
             case "chicken":
                 document.querySelector('.main-container_chicken').removeEventListener('mouseover', mouseoverChicken);
@@ -58,7 +58,7 @@ window.onload = () => {
                 document.querySelector('.buy-string_chicken').classList.add('notAvailableText');
                 document.querySelector('.buy-string_chicken').textContent = 'Печалька, с курой закончился.';
                 document.querySelector('.weight-chicken_color').style.background = "#B3B3B3";
-                console.log(`${value} недоступно`);
+                // console.log(`${value} недоступно`);
         }
     }
     
@@ -70,7 +70,6 @@ let isActiveFoieGras = false;
 foieGras.addEventListener('mouseover', mouseoverFoieGras);
 function mouseoverFoieGras() {
     document.querySelector('.weight-foieGras_color').style.background = "#49aada";
-    console.log(isActiveFoieGras);
     document.querySelector('.drop-shadow_foieGras').classList.remove('drop-shadow');
 };
 
@@ -116,7 +115,6 @@ let isActiveFish = false;
 fish.addEventListener('mouseover', mouseoverFish);
 function mouseoverFish () {
     document.querySelector('.weight-fish_color').style.background = "#49aada";
-    console.log(isActiveFish)
     document.querySelector('.drop-shadow_fish').classList.remove('drop-shadow');
 };
 
@@ -162,7 +160,6 @@ let isActiveChicken = false;
 chicken.addEventListener('mouseover', mouseoverChicken);
 function mouseoverChicken () {
     document.querySelector('.weight-chicken_color').style.background = "#49aada";
-    console.log(isActiveChicken)
     document.querySelector('.drop-shadow_chicken').classList.remove('drop-shadow');
 };
 
